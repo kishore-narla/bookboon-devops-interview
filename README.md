@@ -12,7 +12,7 @@ After fixing this yaml deployment, create an svc file working with this deployme
 
 # Task 4
 
-Write a simple Dokerfile. It needs to be running all the time after creation and prompt "Bookboon test" in logs.
+Write a simple Dockerfile. It needs to be running all the time after creation and prompt "Bookboon test" in logs.
 
 # Task 5
 
