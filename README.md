@@ -4,15 +4,15 @@ We want to have permanent /etc/nginx/conf.d/ dir in this deployment. You can use
 
 # Task 2 (cerebro-test.yaml)
 
-Fix problems occurring in this file. It needs to on the end spin up a running pod.
+Fix problems occurring in this file. In the result we want to have a running pod.
 
 # Task 3 (cerebro-test.yaml)
 
-After fixing this yaml deployment, create an svc file working with this deployment. It needs to get access to Cerebro GUI after running a "kubectl port-forward svc" command.
+After fixing this yaml deployment, create an svc file working with this deployment. It needs to give access to Cerebro GUI after running a "kubectl port-forward svc" command.
 
 # Task 4
 
-Write a simple dockerfile. It needs to be running all the time after creation and prompt "Bookboon test" in logs.
+Write a simple Dokerfile. It needs to be running all the time after creation and prompt "Bookboon test" in logs.
 
 # Task 5
 
