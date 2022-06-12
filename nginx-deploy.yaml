@@ -17,3 +17,12 @@ spec:
         image: nginx:1.16.1
         ports:
         - containerPort: 80
+        volumeMounts:
+        - name: hostpath-volume
+          mountPath: /etc/nginx/conf.d/
+
+      volumes:
+      - name: hostpath-volume
+        hostPath:
+          path: /tmp/config     
+        

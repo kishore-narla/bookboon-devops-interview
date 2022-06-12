@@ -1,23 +1,26 @@
-# Task 1 (nginx-deploy.yaml)
+# Task 1 (nginx-deploy.yaml) Solution
+Added volumesMounts and volumes from container directory to hostpath dir
 
-We want to have permanent /etc/nginx/conf.d/ dir in this deployment. You can use any solution for this, but preferable hostPath.
 
-# Task 2 (cerebro-test.yaml)
+# Task 2 (cerebro-test.yaml) Solution
 
-Fix problems occurring in this file. In the result we want to have a running pod.
+In Deployment resources the limit has to be maximum and request has to be minimum. 
+Created new namspace and configmaps according to your requirements.
+Image tag which you provided has , where in image tags contains '.'  lmenezes/cerebro:0.9.4
+Replicaset has to be min of 1 so that it can create pod.
+Image pull policy set to always.
 
-# Task 3 (cerebro-test.yaml)
 
-After fixing this yaml deployment, create an svc file working with this deployment. It needs to give access to Cerebro GUI after running a "kubectl port-forward svc" command.
 
-# Task 4
+# Task 3 (cerebro-test.yaml) Solution
+created Nodeport service for the deployment and service manage the deployment by checking at matchlabels in deployment.
+Nodeport service exposed to port and we can access the pod using any NODE public ip of cluster with port of svc.
 
-Write a simple Dockerfile. It needs to be running all the time after creation and prompt "Bookboon test" in logs.
+
+# Task 4 Solution
+written a basic docker image that prompts Bookboon test in logs.
 
 # Task 5
 
 Write a simple script (in any language) that will print the numbers from 0 to 100 and convert every tenth to a wordy version.
 
-# Final step
-
-Put all your changes to the branch and push them to this repo.
