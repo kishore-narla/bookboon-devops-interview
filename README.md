@@ -20,7 +20,7 @@ Nodeport service exposed to port and we can access the pod using any NODE public
 # Task 4 Solution
 written a basic docker image that prompts Bookboon test in logs.
 
-# Task 5
+# Task 5  Solution
+We will first check if the number is divided by 10 if it perfectly divides then we will display the text or else display the number
 
-Write a simple script (in any language) that will print the numbers from 0 to 100 and convert every tenth to a wordy version.
 
